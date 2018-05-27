@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>斜角边框</title>
+    <style>
+        #menu{
+            width:9em;
+            margin:0 auto;
+            font-family:Arial;
+            font-size:14px;
+            border:1px solid #AAA;
+        }
+        #menu a,#menu a:visited{
+            display:block;
+            text-decoration:none;
+            color:#000;
+            height:1.4em;
+            border:0.5em solid #FFF;
+        }
+        #menu a:hover{
+            color:#FFF;
+            background-color:#AAA;
+            border-color:#DDD #AAA;
+        }
+    </style>
+</head>
+
+<body>
+<div style="border-left: black 1px solid;border-right: black 1px solid;transform: rotate(20deg);width: 100px;height: 100px;"></div>
+<div id="menu">
+    <a href="#">Home</a>
+    <a href="#">Contact us</a>
+    <a href="#">Web Des</a>
+    <a href="#">Web Dev</a>
+    <a href="#">Map</a>
+</div>
+
+</body>
+</html>
