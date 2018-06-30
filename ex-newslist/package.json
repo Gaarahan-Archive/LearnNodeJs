@@ -4,7 +4,7 @@
   "description": "--- ###设计路由 `针对不同的url请求，做出不同的响应`",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node server.js",
     "start": "node server.js"
   },
   "keywords": [],
