@@ -1,0 +1,34 @@
+body{
+  height:100%;
+  width:100%;
+  padding:0;
+  margin:0;
+}
+.navigation-contain{
+  height:50px;
+  background-color:yellow;
+}
+#title{
+  margin:1px 10px;
+}
+.navigation{
+  list-style:none;
+  padding:0;
+  width:600px;
+  margin:5px 0;
+}
+.navigation li{
+  float:left;
+  padding:0 10px;
+  margin:0 2px;
+  height:20px;
+  background-color:blue;
+}
+.navigation a{
+  color:white;
+  text-decoration:none;
+}
+#news{
+  border: 1px solid grey;
+  margin:5px;
+}

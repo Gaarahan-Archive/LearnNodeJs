@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <title>ITEM</title>
+    <link rel="bookmark" href="../favicon.ico">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link href="../public/StyleSheets/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="navigation-contain">
+      <div id="title">
+        <span onclick=" location='/' "> Geek News </span>
+      </div>
+      <ul class="navigation">
+        <li><a href="#">new</a></li>
+        <li><a href="#">comments</a></li>
+        <li><a href="#">show</a></li>
+        <li><a href="#">ask</a></li>
+        <li><a href="#">jobs</a></li>
+        <li><a href="../Views/submit.ejs">submit</a></li>
+      </ul>
+    </div>
+    <div style="width:600px;border:1px grey solid;text-align:center">
+      <h3> <%= news.title  %> </h3>
+      <br>
+      <p style="width:600px;word-wrap:break-word;">  <%= news.detail %> </p>
+
+    </div>
+  </body>
+</html>

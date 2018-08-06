@@ -1,22 +1,4 @@
-var mysql = require('mysql');
+var dbFunc = require('./function.js');
 
-//配置链接信息
-var connection = mysql.createConnection({
-  host : 'localhost',
-  user : 'root',
-  password : '42272000',
-  database : 'ttms',
-  charset : 'utf8'
-});
+dbFunc.add("0,'NodeTest',3,3,'wdaiwdjw',1");
 
-//链接数据库
-connection.connect();
-
-//执行语句
-var sql = 'select * from studio';
-connection.query(sql,function(err,result,fields){
-  if(err)
-    console.log('[SELECT ERROR] - ',err.message);
-  else
-    console.log(result);
-});

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8'>
+    <title>Geek News</title>
+    <link href="../public/StyleSheets/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="../favicon.ico">
+  </head>
+  <body>
+    <div class="navigation-contain">
+      <div id="title" onclick=" location='/' ">
+        <span> Geek News </span>
+      </div>
+      <ul class="navigation">
+        <li><a href="#">new</a></li>
+        <li><a href="#">comments</a></li>
+        <li><a href="#">show</a></li>
+        <li><a href="#">ask</a></li>
+        <li><a href="#">jobs</a></li>
+        <li><a href="../Views/submit.ejs">submit</a></li>
+      </ul>
+    </div>
+    <div id="news">
+      <% for (var i = 0;i < list.length; i++){  %>
+        <span><%=(i+1) %>.</span>
+        <a href="item?id=<%=list[i].id%>" style="text-decoration:none">
+          <%= list[i].title %>
+        </a>
+        <p><%= list[i].detail %></p>
+      <% } %>
+    </div>
+  </body>
+</html>
